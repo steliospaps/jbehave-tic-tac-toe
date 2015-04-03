@@ -8,7 +8,6 @@
 	<name>tic-tac-toe</name>
 	<modules>
 		<module>tic-tac-toe-engine</module>
-		<module>tic-tac-toe-jbehave</module>
 	</modules>
 	<build>
 		<pluginManagement>
