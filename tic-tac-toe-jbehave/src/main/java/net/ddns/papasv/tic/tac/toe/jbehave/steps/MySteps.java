@@ -1,4 +1,4 @@
-package net.ddns.papasv.steps;
+package net.ddns.papasv.tic.tac.toe.jbehave.steps;
 
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Pending;

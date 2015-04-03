@@ -18,6 +18,11 @@
 
   <dependencies>
     <dependency>
+    	<groupId>${project.groupId}</groupId>
+    	<artifactId>tic-tac-toe-engine</artifactId>
+    	<version>${project.version}</version>
+    </dependency>
+    <dependency>
       <groupId>org.jbehave</groupId>
       <artifactId>jbehave-spring</artifactId>
       <version>${jbehave.core.version}</version>

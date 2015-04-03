@@ -1,4 +1,4 @@
-package net.ddns.papasv;
+package net.ddns.papasv.tic.tac.toe.jbehave;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -26,8 +26,7 @@ import org.jbehave.core.steps.spring.SpringApplicationContextFactory;
 import org.jbehave.core.steps.spring.SpringStepsFactory;
 import org.springframework.context.ApplicationContext;
 
-import net.ddns.papasv.steps.MySteps;
-
+import net.ddns.papasv.tic.tac.toe.jbehave.steps.MySteps;
 import static org.jbehave.core.io.CodeLocations.codeLocationFromClass;
 import static org.jbehave.core.reporters.Format.CONSOLE;
 import static org.jbehave.core.reporters.Format.HTML;
