@@ -7,6 +7,7 @@
 	<packaging>pom</packaging>
 	<name>tic-tac-toe</name>
 	<modules>
+		<module>tic-tac-toe-engine</module>
 		<module>tic-tac-toe-jbehave</module>
 	</modules>
 	<build>
@@ -24,4 +25,20 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	<dependencyManagement>
+		<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+			<version>4.11</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<scope>test</scope>
+			<version>1.9.5</version>
+		</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>
