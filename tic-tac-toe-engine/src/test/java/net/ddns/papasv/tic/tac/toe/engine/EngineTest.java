@@ -33,6 +33,9 @@ public class EngineTest {
 		assertThat(engine.evaluate("1"), equalTo(Result.NOT_FINISHED));
 		assertThat(engine.evaluate("53289146"), equalTo(Result.NOT_FINISHED));
 	}
+	@Test public void draw() {
+		assertThat(engine.evaluate("532891467"), equalTo(Result.DRAW));
+	}
 	
 
 }

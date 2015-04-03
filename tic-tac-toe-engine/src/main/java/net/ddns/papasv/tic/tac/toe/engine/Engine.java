@@ -12,14 +12,18 @@ public class Engine {
 	 * @param game a string with numbers 1-9 representing the movements. first move is first player, second is second etc.
 	 * @return a result see {@link Result}
 	 */
+	@SuppressWarnings("unchecked")
 	public Result evaluate(String game) {
-		game.codePoints()
+		Set<Integer>[] res = game.codePoints()
 			.map(a->toNumber(a))
 			.sequential()
 			.collect( () -> new Set[]{new HashSet<Integer>(),new HashSet<Integer>()},
 					(r,i)->accumulate(r,i), 
 					(a,b)->doThrow());
-		return Result.NOT_FINISHED;
+		if((res[0].size()+res[1].size())!=9){
+			return Result.NOT_FINISHED;
+		}
+		return Result.DRAW;
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
